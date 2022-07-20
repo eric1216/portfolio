@@ -1,7 +1,5 @@
 #bg {
     background-image: url(images/banner.jpg);
-    background-position: left top;
     background-size: cover;
-    padding: 15px;
   }
 
