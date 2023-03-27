@@ -4,7 +4,7 @@ built with bootstrap
 
 # TO DO
 - Add footer to side panel
-- view resume as pdf in new tab
+- view resume as pdf in new tab (DONE)
 - "email copied to clipboard" pop up
 - rewrite intro
 - add learning japanese program
