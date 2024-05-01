@@ -6,6 +6,5 @@ Personal website utilizing HTML/CSS/Bootstrap, hosted on GitHub Pages with Googl
 
 - rewrite intro (DONE)
 - view resume as pdf in new tab (DONE)
-- add learning japanese program
-- change potential solar energy?
+- adjust featured programs (DONE)
 - carousel of skills logos
