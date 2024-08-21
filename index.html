@@ -1,219 +1,236 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-      crossorigin="anonymous" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/x-icon" href="images/globe.png" />
-    <title>Eric Hendershot</title>
-  </head>
 
-  <body>
-    <div class="container-fluid">
-      <div class="row flex-nowrap">
-        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
-          <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
-            <img src="images/pfp.jpeg" class="rounded mx-auto my-4 rounded-circle" alt="pfp" width="150" height="150" />
-            <span class="mx-auto fs-3 mb-3 text-center">Eric Hendershot</span>
-            <ul
-              class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start mx-auto"
-              id="menu">
-              <li class="nav-item mb-3">
-                <a
-                  href="mailto:ericolebusiness@gmail.com"
-                  class="nav-link px-auto align-middle d-flex align-items-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="35"
-                    height="35"
-                    fill="currentColor"
-                    class="bi bi-envelope-fill"
-                    viewBox="0 0 16 16">
-                    <path
-                      d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
-                  </svg>
-                  <span class="ms-2 d-none d-sm-inline fs-3">Email</span>
-                </a>
-              </li>
-              <li class="nav-item mb-3">
-                <a
-                  href="resources/resume.pdf"
-                  target="_blank"
-                  class="nav-link px-auto align-middle d-flex align-items-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="35"
-                    height="35"
-                    fill="currentColor"
-                    class="bi bi-filetype-pdf"
-                    viewBox="0 0 16 16">
-                    <path
-                      fill-rule="evenodd"
-                      d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM1.6 11.85H0v3.999h.791v-1.342h.803c.287 0 .531-.057.732-.173.203-.117.358-.275.463-.474a1.42 1.42 0 0 0 .161-.677c0-.25-.053-.476-.158-.677a1.176 1.176 0 0 0-.46-.477c-.2-.12-.443-.179-.732-.179Zm.545 1.333a.795.795 0 0 1-.085.38.574.574 0 0 1-.238.241.794.794 0 0 1-.375.082H.788V12.48h.66c.218 0 .389.06.512.181.123.122.185.296.185.522Zm1.217-1.333v3.999h1.46c.401 0 .734-.08.998-.237a1.45 1.45 0 0 0 .595-.689c.13-.3.196-.662.196-1.084 0-.42-.065-.778-.196-1.075a1.426 1.426 0 0 0-.589-.68c-.264-.156-.599-.234-1.005-.234H3.362Zm.791.645h.563c.248 0 .45.05.609.152a.89.89 0 0 1 .354.454c.079.201.118.452.118.753a2.3 2.3 0 0 1-.068.592 1.14 1.14 0 0 1-.196.422.8.8 0 0 1-.334.252 1.298 1.298 0 0 1-.483.082h-.563v-2.707Zm3.743 1.763v1.591h-.79V11.85h2.548v.653H7.896v1.117h1.606v.638H7.896Z" />
-                  </svg>
-                  <span class="ms-2 d-none d-sm-inline fs-3">Resume</span>
-                </a>
-              </li>
-              <li class="nav-item mb-3">
-                <a
-                  href="https://www.linkedin.com/in/eric-hendershot/"
-                  class="nav-link px-auto align-middle d-box align-items-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="35"
-                    height="35"
-                    fill="currentColor"
-                    class="bi bi-linkedin"
-                    viewBox="0 0 16 16">
-                    <path
-                      d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
-                  </svg>
-                  <span class="ms-2 d-none d-sm-inline fs-3">LinkedIn</span>
-                </a>
-              </li>
-              <li class="nav-item mb-3">
-                <a href="https://github.com/eric1216" class="nav-link px-auto align-middle d-box align-items-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="35"
-                    height="35"
-                    fill="currentColor"
-                    class="bi bi-github"
-                    viewBox="0 0 16 16">
-                    <path
-                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                  </svg>
-                  <span class="ms-2 d-none d-sm-inline fs-3">GitHub</span>
-                </a>
-              </li>
-              <li class="nav-item mb-3">
-                <a
-                  href="https://public.tableau.com/app/profile/erichendershot"
-                  class="nav-link px-auto align-middle d-flex align-items-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="35"
-                    height="35"
-                    fill="currentColor"
-                    class="bi bi-graph-up"
-                    viewBox="0 0 16 16">
-                    <path
-                      fill-rule="evenodd"
-                      d="M0 0h1v15h15v1H0V0Zm14.817 3.113a.5.5 0 0 1 .07.704l-4.5 5.5a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61 4.15-5.073a.5.5 0 0 1 .704-.07Z" />
-                  </svg>
-                  <span class="ms-2 d-none d-sm-inline fs-3">Tableau</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col bg py-3">
-          <div class="text-center transparent-box my-3">
-            <h1>Hi, I'm Eric!</h1>
-            <p class="fs-5">
-              An aspiring software developer with experience in React, Python, SQL, Git, and data solutions such as
-              BigQuery and Tableau. Currently enhancing skills in full-stack development, including Postman and
-              PostgreSQL. Passionate about data management, backend systems, and creating impactful solutions. When I'm
-              not coding, you'll find me exploring the latest trends in the tech and gaming industry.
-            </p>
-          </div>
-          <div class="row py-3 justify-content-center project-cards-wrapper">
-            <div class="col col-sm-auto project-cards-container">
-              <div class="card text-white bg-dark project-cards">
-                <div class="card-body">
-                  <h5 class="card-title">RIOT Games API request</h5>
-                  <p class="card-text">
-                    Using RIOT Games publicly available API, I developed a python script to get a players champion
-                    mastery data and export it into a ready to use csv file.
-                  </p>
-                  <a href="https://github.com/eric1216/lol-champion-mastery" class="btn btn-primary">GitHub</a>
-                </div>
-              </div>
-            </div>
-            <div class="col col-sm-auto project-cards-container">
-              <div class="card text-white bg-dark project-cards">
-                <div class="card-body">
-                  <h5 class="card-title">Command Line Battleship</h5>
-                  <p class="card-text">
-                    Created with javascript, utilizing readline-sync for user input, this program is a recreation of the
-                    classic board game battleship played in the command line.
-                  </p>
-                  <a href="https://github.com/eric1216/cli-battleship" class="btn btn-primary">GitHub</a>
-                </div>
-              </div>
-            </div>
-            <div class="col col-sm-auto project-cards-container">
-              <div class="card text-white bg-dark project-cards">
-                <div class="card-body">
-                  <h5 class="card-title">PokeAPI</h5>
-                  <p class="card-text">
-                    Interactive website demo that lets users create a list of their favorite pokemon from generation 4
-                    (my personal favorite) pulling data from PokeAPI.
-                  </p>
-                  <a href="https://github.com/eric1216/pokeapi-favorites-list" class="btn btn-primary">GitHub</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <section>
-            <div class="container-fluid py-3">
-              <div class="main-timeline">
-                <div class="timeline right">
-                  <div class="card text-white bg-dark">
-                    <div class="card-body p-4">
-                      <h3>Devslopes Web Academy</h3>
-                      <p class="mb-0">April 2023</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="timeline left">
-                  <div class="card text-white bg-dark">
-                    <div class="card-body p-4">
-                      <h3>Gembah - Data Analyst Intern</h3>
-                      <p class="mb-0">October 2021 - December 2022</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="timeline right">
-                  <div class="card text-white bg-dark">
-                    <div class="card-body p-4">
-                      <h3>Google Data Analytics Professional Certificate - Coursera</h3>
-                      <p class="mb-0">December 2021</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="timeline left">
-                  <div class="card text-white bg-dark">
-                    <div class="card-body p-4">
-                      <h3>Graduated from Ocean County College with AS in Computer Science</h3>
-                      <p class="mb-0">2019 - 2021</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="timeline right">
-                  <div class="card text-white bg-dark">
-                    <div class="card-body p-4">
-                      <h3>Dynasty Sports and Entertainment - QA</h3>
-                      <p class="mb-0">October 2018 - March 2019</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="images/globe.png" />
+  <title>Eric Hendershot</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row flex-nowrap">
+      <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+        <div
+          class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+          <img src="images/pfp.jpeg" class="rounded mx-auto my-4 rounded-circle" alt="pfp"
+            width="150" height="150" />
+          <span class="mx-auto fs-3 mb-3 text-center">Eric Hendershot</span>
+          <ul
+            class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start mx-auto"
+            id="menu">
+            <li class="nav-item mb-3">
+              <a
+                href="mailto:ericolebusiness@gmail.com"
+                class="nav-link px-auto align-middle d-flex align-items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="35"
+                  height="35"
+                  fill="currentColor"
+                  class="bi bi-envelope-fill"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+                </svg>
+                <span class="ms-2 d-none d-sm-inline fs-3">Email</span>
+              </a>
+            </li>
+            <li class="nav-item mb-3">
+              <a
+                href="resources/resume.pdf"
+                target="_blank"
+                class="nav-link px-auto align-middle d-flex align-items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="35"
+                  height="35"
+                  fill="currentColor"
+                  class="bi bi-filetype-pdf"
+                  viewBox="0 0 16 16">
+                  <path
+                    fill-rule="evenodd"
+                    d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM1.6 11.85H0v3.999h.791v-1.342h.803c.287 0 .531-.057.732-.173.203-.117.358-.275.463-.474a1.42 1.42 0 0 0 .161-.677c0-.25-.053-.476-.158-.677a1.176 1.176 0 0 0-.46-.477c-.2-.12-.443-.179-.732-.179Zm.545 1.333a.795.795 0 0 1-.085.38.574.574 0 0 1-.238.241.794.794 0 0 1-.375.082H.788V12.48h.66c.218 0 .389.06.512.181.123.122.185.296.185.522Zm1.217-1.333v3.999h1.46c.401 0 .734-.08.998-.237a1.45 1.45 0 0 0 .595-.689c.13-.3.196-.662.196-1.084 0-.42-.065-.778-.196-1.075a1.426 1.426 0 0 0-.589-.68c-.264-.156-.599-.234-1.005-.234H3.362Zm.791.645h.563c.248 0 .45.05.609.152a.89.89 0 0 1 .354.454c.079.201.118.452.118.753a2.3 2.3 0 0 1-.068.592 1.14 1.14 0 0 1-.196.422.8.8 0 0 1-.334.252 1.298 1.298 0 0 1-.483.082h-.563v-2.707Zm3.743 1.763v1.591h-.79V11.85h2.548v.653H7.896v1.117h1.606v.638H7.896Z" />
+                </svg>
+                <span class="ms-2 d-none d-sm-inline fs-3">Resume</span>
+              </a>
+            </li>
+            <li class="nav-item mb-3">
+              <a
+                href="https://www.linkedin.com/in/eric-hendershot/"
+                class="nav-link px-auto align-middle d-box align-items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="35"
+                  height="35"
+                  fill="currentColor"
+                  class="bi bi-linkedin"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                </svg>
+                <span class="ms-2 d-none d-sm-inline fs-3">LinkedIn</span>
+              </a>
+            </li>
+            <li class="nav-item mb-3">
+              <a href="https://github.com/eric1216"
+                class="nav-link px-auto align-middle d-box align-items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="35"
+                  height="35"
+                  fill="currentColor"
+                  class="bi bi-github"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                </svg>
+                <span class="ms-2 d-none d-sm-inline fs-3">GitHub</span>
+              </a>
+            </li>
+            <li class="nav-item mb-3">
+              <a
+                href="https://public.tableau.com/app/profile/erichendershot"
+                class="nav-link px-auto align-middle d-flex align-items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="35"
+                  height="35"
+                  fill="currentColor"
+                  class="bi bi-graph-up"
+                  viewBox="0 0 16 16">
+                  <path
+                    fill-rule="evenodd"
+                    d="M0 0h1v15h15v1H0V0Zm14.817 3.113a.5.5 0 0 1 .07.704l-4.5 5.5a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61 4.15-5.073a.5.5 0 0 1 .704-.07Z" />
+                </svg>
+                <span class="ms-2 d-none d-sm-inline fs-3">Tableau</span>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
+      <div class="col bg py-3">
+        <div class="text-center transparent-box my-3">
+          <h1>Hi, I'm Eric!</h1>
+          <p class="fs-5">
+            From a young age, I've been immersed in technology, from building my first computer to
+            co-founding my high school's robotics club. At present, I'm enhancing my skills through
+            Devslopes full stack development bootcamp, focusing on TypeScript/JavaScript, React,
+            Git, and database management. I also maintain a personal website and keep up with the
+            latest tech and gaming trends.
+            <br>
+            <br>
+            I'm excited to apply my passion for gaming and user data to a role where I can leverage
+            data to improve user experiences and drive insights. With a problem-solving mindset and
+            dedication to continuous learning, I look forward to contributing to a dynamic team.
+          </p>
+        </div>
+        <div class="row py-3 justify-content-center project-cards-wrapper">
+          <div class="col col-sm-auto project-cards-container">
+            <div class="card text-white bg-dark project-cards">
+              <div class="card-body">
+                <h5 class="card-title">RIOT Games API request</h5>
+                <p class="card-text">
+                  Using RIOT Games publicly available API, I developed a python script to get a
+                  players champion
+                  mastery data and export it into a ready to use csv file.
+                </p>
+                <a href="https://github.com/eric1216/lol-champion-mastery"
+                  class="btn btn-primary">GitHub</a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-sm-auto project-cards-container">
+            <div class="card text-white bg-dark project-cards">
+              <div class="card-body">
+                <h5 class="card-title">Command Line Battleship</h5>
+                <p class="card-text">
+                  Created with javascript, utilizing readline-sync for user input, this program is a
+                  recreation of the
+                  classic board game battleship played in the command line.
+                </p>
+                <a href="https://github.com/eric1216/cli-battleship"
+                  class="btn btn-primary">GitHub</a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-sm-auto project-cards-container">
+            <div class="card text-white bg-dark project-cards">
+              <div class="card-body">
+                <h5 class="card-title">PokeAPI</h5>
+                <p class="card-text">
+                  Interactive website demo that lets users create a list of their favorite pokemon
+                  from generation 4
+                  (my personal favorite) pulling data from PokeAPI.
+                </p>
+                <a href="https://github.com/eric1216/pokeapi-favorites-list"
+                  class="btn btn-primary">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section>
+          <div class="container-fluid py-3">
+            <div class="main-timeline">
+              <div class="timeline right">
+                <div class="card text-white bg-dark">
+                  <div class="card-body p-4">
+                    <h3>Devslopes Web Academy</h3>
+                    <p class="mb-0">April 2023</p>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline left">
+                <div class="card text-white bg-dark">
+                  <div class="card-body p-4">
+                    <h3>Gembah - Data Analyst Intern</h3>
+                    <p class="mb-0">October 2021 - December 2022</p>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline right">
+                <div class="card text-white bg-dark">
+                  <div class="card-body p-4">
+                    <h3>Google Data Analytics Professional Certificate - Coursera</h3>
+                    <p class="mb-0">December 2021</p>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline left">
+                <div class="card text-white bg-dark">
+                  <div class="card-body p-4">
+                    <h3>Graduated from Ocean County College with AS in Computer Science</h3>
+                    <p class="mb-0">2019 - 2021</p>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline right">
+                <div class="card text-white bg-dark">
+                  <div class="card-body p-4">
+                    <h3>Dynasty Sports and Entertainment - QA</h3>
+                    <p class="mb-0">October 2018 - March 2019</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
+  </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-      crossorigin="anonymous"></script>
-  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
