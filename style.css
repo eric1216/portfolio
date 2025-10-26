@@ -5,6 +5,11 @@
   background-attachment: fixed;
 }
 
+.row.flex-nowrap > * {
+  flex-shrink: 1;
+  min-width: 0;
+}
+
 .nav-link {
   color: #0d6efd;
 }
@@ -41,6 +46,38 @@
 .transparent-box h1 {
   padding-top: 15px;
   color: white;
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  height: 100px;
+}
+
+.track {
+  display: flex;
+  height: 100%;
+  padding: 5px 0;
+  animation: spin 25s linear infinite;
+  width: max-content;
+}
+
+.track img {
+  display: inline-flex;
+  flex: 0 0 auto;
+  margin: 0 10px;
+  height: 100%;
+}
+
+@keyframes spin {
+  from {
+    translate: 0
+  }
+
+  to {
+    translate: -100%;
+  }
 }
 
 .project-cards-container {
