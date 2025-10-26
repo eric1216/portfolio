@@ -4,4 +4,3 @@ This repository contains the code for my personal website, built using HTML, CSS
 
 # TO DO
 
-- carousel of skills logos
