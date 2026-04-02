@@ -5,6 +5,11 @@
   background-attachment: fixed;
 }
 
+.desktop-sidebar {
+  width: 220px;
+  flex-shrink: 0;
+}
+
 .row.flex-nowrap > * {
   flex-shrink: 1;
   min-width: 0;
@@ -12,6 +17,7 @@
 
 .nav-link {
   color: #0d6efd;
+  white-space: nowrap;
 }
 
 .nav-link:hover {
