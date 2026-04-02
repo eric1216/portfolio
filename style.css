@@ -186,7 +186,35 @@
   left: -12px;
 }
 
-/* ── HAMBURGER BUTTON ── */
+/* ── COPY TOOLTIP ── */
+.copy-tooltip {
+  position: fixed;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: #1a1a1a;
+  color: #fff;
+  font-size: 0.85rem;
+  padding: 5px 10px;
+  border-radius: 6px;
+  pointer-events: none;
+  transform: translate(-50%, -140%);
+  opacity: 0;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.copy-tooltip--show {
+  opacity: 1;
+  transform: translate(-50%, -160%);
+}
+
+.copy-tooltip--hide {
+  opacity: 0;
+  transform: translate(-50%, -180%);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
 .hamburger-btn {
   position: fixed;
   top: 12px;
