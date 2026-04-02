@@ -81,11 +81,24 @@
 
 .project-cards-container {
   padding-bottom: 1rem;
+  display: flex;
 }
 
 .project-cards {
   max-width: 18rem;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-cards .card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.project-cards .card-body .btn {
+  margin-top: auto;
 }
 
 /* The actual timeline (the vertical ruler) */
