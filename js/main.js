@@ -1,5 +1,4 @@
-/* ── MOBILE MENU ── */
-
+// mobile menu
 const hamburgerBtn = document.getElementById('hamburgerBtn');
 const overlay = document.getElementById('mobileOverlay');
 
@@ -19,28 +18,27 @@ function closeMenu() {
   document.body.style.overflow = '';
 }
 
-// Toggle open/close on hamburger click
+// toggle open/close on hamburger click
 hamburgerBtn.addEventListener('click', function () {
   overlay.classList.contains('open') ? closeMenu() : openMenu();
 });
 
-// Close when tapping the dark backdrop
+// close when tapping the dark backdrop
 overlay.addEventListener('click', function (e) {
   if (e.target === overlay) closeMenu();
 });
 
-// Close on Escape key
+// close on Escape key
 document.addEventListener('keydown', function (e) {
   if (e.key === 'Escape') closeMenu();
 });
 
-// Auto-close when resizing back to desktop width
+// auto-close when resizing back to desktop width
 window.addEventListener('resize', function () {
   if (window.innerWidth >= 768) closeMenu();
 });
 
-/* ── EMAIL COPY TO CLIPBOARD ── */
-
+// email copy to clipboard
 (function () {
   const EMAIL = 'ericolebusiness@gmail.com';
 
@@ -57,7 +55,7 @@ window.addEventListener('resize', function () {
     tip.style.top = `${y}px`;
     document.body.appendChild(tip);
 
-    // Trigger fade-up animation next frame
+    // trigger fade-up animation next frame
     requestAnimationFrame(function () {
       requestAnimationFrame(function () {
         tip.classList.add('copy-tooltip--show');
@@ -82,18 +80,19 @@ window.addEventListener('resize', function () {
   });
 })();
 
+// carousel
 (function () {
   const carousel = document.querySelector('.carousel');
   const track = document.querySelector('.track');
 
   if (!carousel || !track) return;
 
-  // Clone once — JS owns the duplicate, not the HTML
+  // clone once — JS owns the duplicate, not the HTML
   const clone = track.cloneNode(true);
   clone.setAttribute('aria-hidden', 'true');
   carousel.appendChild(clone);
 
-  // Position both tracks side by side via transform
+  // position both tracks side by side via transform
   const SPEED = 50; // pixels per second — only value to change
   let offset = 0;
   let lastTime = null;
@@ -108,7 +107,7 @@ window.addEventListener('resize', function () {
     offset += SPEED * delta;
     if (offset >= trackWidth) offset -= trackWidth;
 
-    // Both tracks shift left by the same amount —
+    // both tracks shift left by the same amount —
     // flex layout keeps them side by side naturally
     track.style.transform = `translateX(-${offset}px)`;
     clone.style.transform = `translateX(-${offset}px)`;

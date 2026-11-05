@@ -1,4 +1,4 @@
-/* column background */
+/* Column background */
 .bg {
   background-image: url(images/beach.jpeg);
   background-size: cover;
@@ -186,7 +186,7 @@
   left: -12px;
 }
 
-/* ── COPY TOOLTIP ── */
+/* Copy tooltip */
 .copy-tooltip {
   position: fixed;
   z-index: 9999;
@@ -248,7 +248,7 @@
   transition: transform 0.25s, opacity 0.25s;
 }
 
-/* Animate hamburger → × when menu is open */
+/* Animate hamburger menu */
 .hamburger-btn.is-open span:nth-child(1) {
   transform: translateY(7px) rotate(45deg);
 }
@@ -262,7 +262,7 @@
   transform: translateY(-7px) rotate(-45deg);
 }
 
-/* ── MOBILE OVERLAY (backdrop + sidebar) ── */
+/* Mobile overlay */
 .mobile-overlay {
   display: none;
   position: fixed;
@@ -335,8 +335,7 @@
   color: #ffffff;
 }
 
-/* ── MEDIA QUERIES ── */
-
+/* media queries */
 /* Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
 
